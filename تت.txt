@@ -1,0 +1,21 @@
+def calculator():
+    print("=== Simple Calculator ===")
+    print("Choose operation:")
+    print("1. Addition (+)")
+    print("2. Subtraction (-)")
+
+    choice = input("Enter operation number (1/2): ")
+
+    # Input numbers
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+
+    if choice == '1':
+        print(f"Result: {num1} + {num2} = {num1 + num2}")
+    elif choice == '2':
+        print(f"Result: {num1} - {num2} = {num1 - num2}")
+    else:
+        print("Invalid choice!")
+
+# Run the calculator
+calculator()
